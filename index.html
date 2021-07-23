@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Show the task</title>
+  </head>
+  <body>
+    <h2>Assignment</h2>
+    <p>Table of fibonnaci numbers and also prime numbers.</p>
+    <input id="inputelement" type="text" placeholder="Enter a number upto you want to generate the table">
+    <button onclick="generatetable(false)">Generate</button>
+    <table id="fibotable" style="width: 100%">
+      <tr>
+        <th>S.no</th>
+        <th>Last fibonacci number</th>
+        <th>fibonaci series</th>
+        <th>Prime number</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>(1,1)</td>
+        <td></td>
+      </tr>
+    </table>
+    <div id="errormsg">Oops a very large number of prime numbers is generated. Plz.. try for a bit smaller number or app may crash.If still you want to try click here.
+        <button id="ch" onclick="generatetable(true)">click here</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
